@@ -2,7 +2,7 @@ import org.apache.spark.sql.SparkSession
 import org.mockito.Mockito.{RETURNS_DEFAULTS, RETURNS_MOCKS, mock, spy, when}
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
-
+// Unit test cases
 class wordCountTest extends AnyFlatSpec with should.Matchers {
 
   "readCSV" should "simple read" in {

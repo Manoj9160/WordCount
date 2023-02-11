@@ -4,12 +4,12 @@ import scala.collection.IterableOnce.iterableOnceExtensionMethods
 
 object wordCount extends App {
 
-
+//read the csv file
   def readCSV(a:String):String = {
     val source = scala.io.Source.fromFile(a).mkString
     source
   }
-
+//word count 
   def workCount(b: List[String])= {
 
     val word = b.flatMap( line => line.split(" "))
